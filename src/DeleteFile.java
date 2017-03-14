@@ -8,9 +8,9 @@ public class DeleteFile {
         try {
             File file = new File("c:\\a1.txt");
             if (file.delete()) {
-                System.out.println("The file: " + file.getName() + " is deleted! ");
+                System.out.println("The file: " + file.getName() + " is deleted! "+ file.getPath());
             } else{
-                System.out.println("The file is not deleted");
+                System.out.println("The file is not deleted"+file.getAbsolutePath());
             }
         }catch (Exception e){
             e.printStackTrace();
